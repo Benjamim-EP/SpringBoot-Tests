@@ -2,9 +2,9 @@ package com.bookCatalog.bookcatalog.tests;
 
 import java.time.Instant;
 
-import com.devsuperior.bookcatalog.dto.BookDTO;
-import com.devsuperior.bookcatalog.entities.Category;
-import com.devsuperior.bookcatalog.entities.Book;
+import com.bookCatalog.bookcatalog.dto.BookDTO;
+import com.bookCatalog.bookcatalog.entities.Book;
+import com.bookCatalog.bookcatalog.entities.Category;
 
 public class Factory {
 	

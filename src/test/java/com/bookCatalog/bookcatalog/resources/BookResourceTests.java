@@ -24,12 +24,12 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 
+import com.bookCatalog.bookcatalog.dto.BookDTO;
+import com.bookCatalog.bookcatalog.resources.BookResource;
+import com.bookCatalog.bookcatalog.services.BookService;
+import com.bookCatalog.bookcatalog.services.exceptions.DatabaseException;
+import com.bookCatalog.bookcatalog.services.exceptions.ResourceNotFoundException;
 import com.bookCatalog.bookcatalog.tests.Factory;
-import com.devsuperior.bookcatalog.dto.BookDTO;
-import com.devsuperior.bookcatalog.resources.BookResource;
-import com.devsuperior.bookcatalog.services.BookService;
-import com.devsuperior.bookcatalog.services.exceptions.DatabaseException;
-import com.devsuperior.bookcatalog.services.exceptions.ResourceNotFoundException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @WebMvcTest(BookResource.class)

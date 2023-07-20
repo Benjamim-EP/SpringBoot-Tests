@@ -1,4 +1,4 @@
-package com.devsuperior.bookcatalog.services;
+package com.bookCatalog.bookcatalog.services;
 
 import java.util.Optional;
 
@@ -12,11 +12,11 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.devsuperior.bookcatalog.dto.CategoryDTO;
-import com.devsuperior.bookcatalog.entities.Category;
-import com.devsuperior.bookcatalog.repositories.CategoryRepository;
-import com.devsuperior.bookcatalog.services.exceptions.DatabaseException;
-import com.devsuperior.bookcatalog.services.exceptions.ResourceNotFoundException;
+import com.bookCatalog.bookcatalog.dto.CategoryDTO;
+import com.bookCatalog.bookcatalog.entities.Category;
+import com.bookCatalog.bookcatalog.repositories.CategoryRepository;
+import com.bookCatalog.bookcatalog.services.exceptions.DatabaseException;
+import com.bookCatalog.bookcatalog.services.exceptions.ResourceNotFoundException;
 
 @Service
 public class CategoryService {

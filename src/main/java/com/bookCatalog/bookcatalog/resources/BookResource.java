@@ -1,4 +1,4 @@
-package com.devsuperior.bookcatalog.resources;
+package com.bookCatalog.bookcatalog.resources;
 
 import java.net.URI;
 
@@ -16,32 +16,32 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.devsuperior.bookcatalog.dto.CategoryDTO;
-import com.devsuperior.bookcatalog.services.CategoryService;
+import com.bookCatalog.bookcatalog.dto.BookDTO;
+import com.bookCatalog.bookcatalog.services.BookService;
 
-@RestController 
-@RequestMapping(value = "/categories")
-public class CategoryResource {
+@RestController
+@RequestMapping(value = "/books")
+public class BookResource {
 
 	@Autowired
-	private CategoryService service;
+	private BookService service;
 	
 	@GetMapping
-	public ResponseEntity<Page<CategoryDTO>> findAll(Pageable pageable) {
+	public ResponseEntity<Page<BookDTO>> findAll(Pageable pageable) {
 		
-		Page<CategoryDTO> list = service.findAllPaged(pageable);
+		Page<BookDTO> list = service.findAllPaged(pageable);
 		
 		return ResponseEntity.ok().body(list);
 	}
 
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<CategoryDTO> findById(@PathVariable Long id) {
-		CategoryDTO dto = service.findById(id);
+	public ResponseEntity<BookDTO> findById(@PathVariable Long id) {
+		BookDTO dto = service.findById(id);
 		return ResponseEntity.ok().body(dto);
 	}
 	
 	@PostMapping
-	public ResponseEntity<CategoryDTO> insert(@RequestBody CategoryDTO dto) {
+	public ResponseEntity<BookDTO> insert(@RequestBody BookDTO dto) {
 		dto = service.insert(dto);
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
 				.buildAndExpand(dto.getId()).toUri();
@@ -49,7 +49,7 @@ public class CategoryResource {
 	}
 
 	@PutMapping(value = "/{id}")
-	public ResponseEntity<CategoryDTO> update(@PathVariable Long id, @RequestBody CategoryDTO dto) {
+	public ResponseEntity<BookDTO> update(@PathVariable Long id, @RequestBody BookDTO dto) {
 		dto = service.update(id, dto);
 		return ResponseEntity.ok().body(dto);
 	}

@@ -1,4 +1,4 @@
-package com.devsuperior.bookcatalog.resources.exceptions;
+package com.bookCatalog.bookcatalog.resources.exceptions;
 
 import java.time.Instant;
 
@@ -7,8 +7,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.devsuperior.bookcatalog.services.exceptions.DatabaseException;
-import com.devsuperior.bookcatalog.services.exceptions.ResourceNotFoundException;
+import com.bookCatalog.bookcatalog.services.exceptions.DatabaseException;
+import com.bookCatalog.bookcatalog.services.exceptions.ResourceNotFoundException;
 
 @ControllerAdvice
 public class ResourceExceptionHandler {

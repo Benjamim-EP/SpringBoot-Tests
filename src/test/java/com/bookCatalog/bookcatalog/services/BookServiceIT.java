@@ -10,10 +10,10 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.devsuperior.bookcatalog.dto.BookDTO;
-import com.devsuperior.bookcatalog.repositories.BookRepository;
-import com.devsuperior.bookcatalog.services.BookService;
-import com.devsuperior.bookcatalog.services.exceptions.ResourceNotFoundException;
+import com.bookCatalog.bookcatalog.dto.BookDTO;
+import com.bookCatalog.bookcatalog.repositories.BookRepository;
+import com.bookCatalog.bookcatalog.services.BookService;
+import com.bookCatalog.bookcatalog.services.exceptions.ResourceNotFoundException;
 
 @SpringBootTest
 @Transactional

@@ -1,4 +1,4 @@
-package com.devsuperior.bookcatalog.services.exceptions;
+package com.bookCatalog.bookcatalog.services.exceptions;
 
 public class DatabaseException extends RuntimeException {
 	private static final long serialVersionUID = 1L;

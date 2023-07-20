@@ -1,4 +1,4 @@
-package com.devsuperior.bookcatalog.entities;
+package com.bookCatalog.bookcatalog.entities;
 
 import java.io.Serializable;
 import java.time.Instant;

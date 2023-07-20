@@ -1,4 +1,4 @@
-package com.devsuperior.bookcatalog.resources.exceptions;
+package com.bookCatalog.bookcatalog.resources.exceptions;
 
 import java.io.Serializable;
 import java.time.Instant;

@@ -1,4 +1,4 @@
-package com.devsuperior.bookcatalog.dto;
+package com.bookCatalog.bookcatalog.dto;
 
 import java.io.Serializable;
 import java.time.Instant;
@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import com.devsuperior.bookcatalog.entities.Category;
-import com.devsuperior.bookcatalog.entities.Book;
+import com.bookCatalog.bookcatalog.entities.Book;
+import com.bookCatalog.bookcatalog.entities.Category;
 
 public class BookDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
