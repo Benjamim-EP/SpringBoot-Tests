@@ -1,4 +1,4 @@
-package com.devsuperior.bookcatalog.resources;
+package com.bookCatalog.bookcatalog.resources;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
@@ -24,11 +24,12 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 
+import com.bookCatalog.bookcatalog.tests.Factory;
 import com.devsuperior.bookcatalog.dto.BookDTO;
+import com.devsuperior.bookcatalog.resources.BookResource;
 import com.devsuperior.bookcatalog.services.BookService;
 import com.devsuperior.bookcatalog.services.exceptions.DatabaseException;
 import com.devsuperior.bookcatalog.services.exceptions.ResourceNotFoundException;
-import com.devsuperior.bookcatalog.tests.Factory;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @WebMvcTest(BookResource.class)

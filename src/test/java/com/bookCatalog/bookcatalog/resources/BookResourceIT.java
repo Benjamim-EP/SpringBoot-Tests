@@ -1,4 +1,4 @@
-package com.devsuperior.bookcatalog.resources;
+package com.bookCatalog.bookcatalog.resources;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
@@ -15,8 +15,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.bookCatalog.bookcatalog.tests.Factory;
 import com.devsuperior.bookcatalog.dto.BookDTO;
-import com.devsuperior.bookcatalog.tests.Factory;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @SpringBootTest

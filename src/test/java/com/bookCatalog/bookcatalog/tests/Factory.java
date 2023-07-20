@@ -1,4 +1,4 @@
-package com.devsuperior.bookcatalog.tests;
+package com.bookCatalog.bookcatalog.tests;
 
 import java.time.Instant;
 

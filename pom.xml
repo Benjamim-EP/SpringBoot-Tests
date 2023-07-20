@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.devsuperior</groupId>
-	<artifactId>dscatalog</artifactId>
+	<artifactId>bookcatalog</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dscatalog</name>
-	<description>DSCatalog Bootcamp DevSuperior</description>
+	<description>Demo project</description>
 
 	<properties>
 		<java.version>11</java.version>

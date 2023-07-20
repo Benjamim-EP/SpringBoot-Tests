@@ -1,4 +1,4 @@
-package com.devsuperior.bookcatalog.services;
+package com.bookCatalog.bookcatalog.services;
 
 import static org.mockito.Mockito.times;
 
@@ -21,12 +21,13 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+import com.bookCatalog.bookcatalog.tests.Factory;
 import com.devsuperior.bookcatalog.dto.BookDTO;
 import com.devsuperior.bookcatalog.entities.Book;
 import com.devsuperior.bookcatalog.repositories.BookRepository;
+import com.devsuperior.bookcatalog.services.BookService;
 import com.devsuperior.bookcatalog.services.exceptions.DatabaseException;
 import com.devsuperior.bookcatalog.services.exceptions.ResourceNotFoundException;
-import com.devsuperior.bookcatalog.tests.Factory;
 
 @ExtendWith(SpringExtension.class)
 public class BookServiceTests {

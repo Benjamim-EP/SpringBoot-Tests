@@ -1,4 +1,4 @@
-package com.devsuperior.bookcatalog.services;
+package com.bookCatalog.bookcatalog.services;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.devsuperior.bookcatalog.dto.BookDTO;
 import com.devsuperior.bookcatalog.repositories.BookRepository;
+import com.devsuperior.bookcatalog.services.BookService;
 import com.devsuperior.bookcatalog.services.exceptions.ResourceNotFoundException;
 
 @SpringBootTest

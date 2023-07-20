@@ -1,10 +1,10 @@
-package com.devsuperior.bookcatalog;
+package com.bookCatalog.bookcatalog;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DscatalogApplicationTests {
+class BookcatalogApplicationTests {
 
 	@Test
 	void contextLoads() {
