@@ -10,7 +10,6 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.dao.EmptyResultDataAccessException;
 
 import com.bookCatalog.bookcatalog.entities.Book;
-import com.bookCatalog.bookcatalog.repositories.BookRepository;
 import com.bookCatalog.bookcatalog.tests.Factory;
 
 @DataJpaTest
